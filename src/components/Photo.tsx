@@ -33,7 +33,9 @@ const Photo: React.FunctionComponent<IPhotoProps> = (props) => {
           ? <Spinner animation='border' variant='success' />
           : <Image src={url} width='100%' className='mb-2 mt-2 rounded-2' />}
       </fieldset>
+      <Button variant='warning'>{'<'}</Button>
       <Button type='submit' variant='success'>Submit</Button>
+      <Button variant='secondary'>{'>'}</Button>
     </>
   )
 }
