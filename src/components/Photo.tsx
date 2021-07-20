@@ -34,6 +34,7 @@ const Photo: React.FunctionComponent<IPhotoProps> = (props) => {
           : <Image src={url} width='100%' className='mb-2 mt-2 rounded-2' />}
       </fieldset>
       <Button type='submit' variant='success'>Submit</Button>
+      nothing
     </>
   )
 }
