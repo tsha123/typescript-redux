@@ -11,19 +11,19 @@ const Filter: React.FunctionComponent<IFilterProps> = (props) => {
 
   const filter: any = useSelector((state: any) => state.filter)
   const dispatch = useDispatch()
-  const category = ['Technology', 'Styles', 'Education', 'Nature', 'Animals']
+  const categories = ['Technology', 'Styles', 'Education', 'Nature', 'Animals']
   const [allCheck, setAllCheck] = useState(false)
 
   useEffect(() => {
-    category.every(ele => filter[ele])
+    categories.every(ele => filter[ele])
       ? setAllCheck(true) : setAllCheck(false)
   }, [filter])
 
   const clickAllBtn = () => {
     setAllCheck(!allCheck)
     allCheck
-      ? category.forEach(ele => dispatch(actionFilterUnCheck(ele)))
-      : category.forEach(ele => dispatch(actionFilterCheck(ele)))
+      ? categories.forEach(ele => dispatch(actionFilterUnCheck(ele)))
+      : categories.forEach(ele => dispatch(actionFilterCheck(ele)))
   }
 
   const handleCheck = (ele: string) => {
@@ -35,6 +35,7 @@ const Filter: React.FunctionComponent<IFilterProps> = (props) => {
   return (
     <DropdownButton title align='end' variant='outline-secondary'>
       <div className='d-flex flex-wrap'>
+        {/* Btn All */}
         <Button className='rounded-pill m-1'
           onClick={() => clickAllBtn()}
           variant={allCheck ? 'outline-primary' : 'outline-secondary'}>
@@ -44,7 +45,9 @@ const Filter: React.FunctionComponent<IFilterProps> = (props) => {
             </svg>}
           &nbsp;All
         </Button>
-        {category.map((ele, index) =>
+
+        {/* Categories */}
+        {categories.map((ele, index) =>
           <Button className='rounded-pill m-1'
             onClick={() => handleCheck(ele)} key={index}
             variant={filter[ele] ? 'outline-primary' : 'outline-secondary'}>
