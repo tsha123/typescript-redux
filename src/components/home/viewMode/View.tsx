@@ -2,6 +2,7 @@ import React from 'react'
 import { ButtonGroup, Col, ToggleButton } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import { actionViewToggle } from '../../../actions/view'
+import Filter from './Filter'
 import GridView from './GridView'
 import ListView from './ListView'
 
@@ -32,7 +33,7 @@ const View: React.FunctionComponent<IViewProps> = (props) => {
             </svg>
           </ToggleButton>
         </ButtonGroup>
-        {/* <Filter /> */}
+        <Filter />
       </Col>
       <p className="m-2">{view === list ? <ListView /> : <GridView />}</p>
     </Col>

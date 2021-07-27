@@ -7,7 +7,10 @@ interface IListViewProps {
 }
 
 const ListView: React.FunctionComponent<IListViewProps> = (props) => {
-  const img: Array<object> = useSelector((state: any) => state.img)
+  const filter = useSelector((state: any) => state.filter)
+  let img: Array<object> = useSelector((state: any) => state.img)
+  img = img.filter((ele: any) => filter[ele.category])
+  
   return (
     <Row>
       {img.map((ele: any, index) => {

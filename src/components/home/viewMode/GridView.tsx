@@ -7,7 +7,10 @@ interface IGridViewProps {
 }
 
 const GridView: React.FunctionComponent<IGridViewProps> = (props) => {
-  const img: Array<object> = useSelector((state: any) => state.img)
+  const filter = useSelector((state: any) => state.filter)
+  let img: Array<object> = useSelector((state: any) => state.img)
+  img = img.filter((ele: any) => filter[ele.category])
+  
   return (
     <Row>
       {img.map((ele: any, index) => {
