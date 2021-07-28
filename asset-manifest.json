@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/typescript-redux/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/typescript-redux/static/js/main.f67b35a2.chunk.js",
+    "main.js.map": "/typescript-redux/static/js/main.f67b35a2.chunk.js.map",
+    "runtime-main.js": "/typescript-redux/static/js/runtime-main.8bc417d0.js",
+    "runtime-main.js.map": "/typescript-redux/static/js/runtime-main.8bc417d0.js.map",
+    "static/css/2.fb17aa6d.chunk.css": "/typescript-redux/static/css/2.fb17aa6d.chunk.css",
+    "static/js/2.c9abdb4b.chunk.js": "/typescript-redux/static/js/2.c9abdb4b.chunk.js",
+    "static/js/2.c9abdb4b.chunk.js.map": "/typescript-redux/static/js/2.c9abdb4b.chunk.js.map",
+    "static/js/3.99f019e4.chunk.js": "/typescript-redux/static/js/3.99f019e4.chunk.js",
+    "static/js/3.99f019e4.chunk.js.map": "/typescript-redux/static/js/3.99f019e4.chunk.js.map",
+    "index.html": "/typescript-redux/index.html",
+    "static/css/2.fb17aa6d.chunk.css.map": "/typescript-redux/static/css/2.fb17aa6d.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/typescript-redux/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.c9abdb4b.chunk.js.LICENSE.txt": "/typescript-redux/static/js/2.c9abdb4b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8bc417d0.js",
+    "static/css/2.fb17aa6d.chunk.css",
+    "static/js/2.c9abdb4b.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.f67b35a2.chunk.js"
+  ]
+}
